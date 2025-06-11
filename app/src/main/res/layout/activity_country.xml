@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0065F8"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabKingdom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="United Kingdom" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItaly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Italy" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabFrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" France" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uk_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".KingdomFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Ảnh quốc kỳ -->
+            <ImageView
+                android:id="@+id/imageFlag"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/uk_flag" />
+
+            <!-- Thông tin cơ bản -->
+            <TextView
+                android:id="@+id/textInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Capital : London\nLargest City : London\nNational Language : English\nTotal Area : 242,495 km²\nCurrency : GBP"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <!-- Mô tả dài -->
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="The United Kingdom has a rich and complex history that has significantly influenced global politics, economics, science, and culture. It was once the center of the vast British Empire, which at its height was the largest empire in history, encompassing territories across every inhabited continent. This imperial legacy has shaped not only the UK’s multicultural society but also its strong international ties, particularly within the Commonwealth of Nations.
+
+London, the capital of the UK, is one of the world’s leading financial centers and a global city renowned for its arts, architecture, education, and history. Other major cities, such as Edinburgh, Cardiff, and Belfast, serve as cultural and political hubs for Scotland, Wales, and Northern Ireland, respectively.
+
+The UK is a constitutional monarchy with a parliamentary democracy. The monarch—currently King Charles III—serves as the head of state, while the Prime Minister acts as the head of government. The UK Parliament, located in Westminster, consists of two houses: the House of Commons and the House of Lords.
+
+Geographically, the UK features a diverse landscape, ranging from the rugged highlands of Scotland and the scenic Lake District in England to the rolling valleys of Wales and the lush countryside of Northern Ireland. The climate is generally temperate, with significant regional variations."
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#333333" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
